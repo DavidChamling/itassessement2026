@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Dragon Chinese Restaurant - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>Golden Dragon</h1>
+                <p>Authentic Chinese Cuisine Since 1985</p>
+            </div>
+        </header>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Contact Us</h2>
+            <p>Send us a message or visit our restaurant</p>
+
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form id="contactForm" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject">
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Table Reservation</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="complaint">Complaint</option>
+                            </select>
+                            <div class="error-message" id="subjectError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5"></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p><strong>Address:</strong><br>
+                    123 Lotus Street, Chinatown<br>
+                    New York, NY 10013</p>
+
+                    <p><strong>Phone:</strong><br>
+                    <a href="tel:+1234567890">(123) 456-7890</a></p>
+
+                    <p><strong>Email:</strong><br>
+                    <a href="mailto:info@goldendragon.com">info@goldendragon.com</a></p>
+
+                    <p><strong>Opening Hours:</strong><br>
+                    Monday - Thursday: 11:30 AM - 10:00 PM<br>
+                    Friday - Saturday: 11:30 AM - 11:30 PM<br>
+                    Sunday: Closed</p>
+
+                    <div class="external-links">
+                        <h4>Find us on:</h4>
+                        <a href="https://google.com/maps" target="_blank">Google Maps</a><br>
+                        <a href="https://yelp.com" target="_blank">Review on Yelp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-table">
+                <h3>Private Event Pricing</h3>
+                <table>
+                    <tr>
+                        <th>Package</th>
+                        <th colspan="2">Price per person</th>
+                    </tr>
+                    <tr>
+                        <td>Standard</td>
+                        <td>$35</td>
+                        <td rowspan="3">Includes: 3-course meal, tea service</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe</td>
+                        <td>$55</td>
+                    </tr>
+                    <tr>
+                        <td>Premium</td>
+                        <td>$85</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <table class="nested-table">
+                                <tr>
+                                    <td>Minimum 20 people for private events</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="external-links-section">
+                <h3>Cool Websites We Recommend</h3>
+                <p>Check out these websites for more Chinese cuisine inspiration:</p>
+                <ul>
+                    <li><a href="https://www.chinesefoodmap.com" target="_blank">Chinese Food Map</a></li>
+                    <li><a href="https://www.wokofwisdom.com" target="_blank">Wok of Wisdom</a></li>
+                    <li><a href="https://www.dimsumcentral.com" target="_blank">Dim Sum Central</a></li>
+                </ul>
+            </div>
+
+            <div class="blank-target-example">
+                <h3>Open in New Window</h3>
+                <a href="https://www.wikipedia.org/wiki/Chinese_cuisine" target="_blank">Learn About Chinese Cuisine (Opens in New Window)</a>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p><strong>Golden Dragon Restaurant</strong></p>
+                <p>123 Lotus Street, Chinatown, New York, NY 10013</p>
+                <p>Phone: <a href="tel:+1234567890">(123) 456-7890</a></p>
+                <p>Email: <a href="mailto:info@goldendragon.com">info@goldendragon.com</a></p>
+            </div>
+            <div class="text-only-nav">
+                <a href="index.html">Home</a> | 
+                <a href="gallery.html">Gallery</a> | 
+                <a href="contact.html">Contact</a> | 
+                <a href="about.html">About</a> | 
+                <a href="reservations.html">Reservations</a>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2024 Golden Dragon Restaurant. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="validate.js"></script>
+</body>
+</html>
